@@ -1,0 +1,567 @@
+    /*start main rules*/
+    *{      box-sizing: border-box;
+    
+    }
+    button:focus {
+        outline:none;
+        box-shadow: 0px 0px 7px 0px #AAFFAA  
+    }
+    body{
+        
+        background-color:white;
+        height: 2000px;
+        
+        
+    }
+    .container{
+        width: 960px;
+        margin: auto;
+
+        
+        
+    }
+   
+    @font-face {
+        font-family: myFirstFont;
+        src: url("fonts/ChelseaMarket-Regular.ttf");
+        font-weight: bold;
+        
+    }
+    @font-face {
+        font-family: myFirstFont2;
+        src: url("fonts/TitilliumWeb-Light.ttf");
+        
+        
+    }
+    .clearfix{
+        clear: both;
+    }
+    /*End main rules*/
+    
+    /*Start Header */
+    header .slider{
+        background-image: url("../Img/g.jpg");
+        background-size: cover;
+        height: 480px;
+        background-attachment: fixed;
+        
+    }
+    header .slider .blur{
+        position: relative;
+        max-width: 800px;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, .5);
+        overflow: hidden;
+        margin: 0 auto;
+        
+        z-index: 1;
+        padding: 10px;
+        top:2cm;
+        border: 6px solid #fff;
+        
+    }
+    header .slider .blur:before{
+        content: '';
+        background-image: url("../Img/g.jpg");
+        background-attachment: fixed;
+        background-size: cover;
+        left :0px;
+        top:0px;
+        right: -20px;
+        bottom: -20px;
+        
+        filter: blur(4px);
+        position: absolute;
+        z-index: -1;
+    }
+    header .slider .intro{
+        color:#fff;
+        padding-top: 70px;
+        text-align: center;
+        padding-bottom: 70px;
+        
+        
+    }
+    header .slider .intro h3{
+        margin: 0 0px 70px 90px;
+        font-size: 50px;
+        width: 600px;
+        border-top: 4px solid #fff;
+        border-bottom: 4px solid #fff;
+        padding: 5px 0;
+        
+        
+    }
+    
+    header .slider .intro button{
+        background: none;
+        cursor: pointer;
+        color: #fff;
+        border:2px solid #fff;
+        padding:10px 6px ;
+        font-weight: bold;
+        margin-left: -150px;
+        font-size: 22px;
+        box-shadow: 4px 3px 9px #000;
+        
+    }
+    
+    
+    header nav{
+        
+        background-color: #252F31;
+        color:#fff;
+        overflow: hidden;
+        position: sticky;
+    }
+    
+    header nav h2{ float: left; text-transform: uppercase;font-family: myFirstFont, cursive;}
+    header nav h2 span{  color:#28CF7D}
+    header nav ul{
+        list-style: none;
+        padding-left: 0;
+        
+        float: right;
+    }
+    
+    header nav ul li{
+        font-family:  myFirstFont2;
+        float: left;
+        padding: 10px;
+        
+    }
+    header nav ul li a{
+        color: #fff;
+        text-decoration: none;
+    }
+    header nav ul li.ac a,header nav ul li a:hover{
+        color:#21BE71 ;
+    }
+    
+    /*End Header */
+    
+    /*Start Features*/
+    .Features{
+        
+        overflow: hidden;
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+    .Features .feat{
+        float: left;
+        width: 33.333%;
+        height: 150px;
+        
+    }
+    .Features .feat h3{
+        color: #556866;
+    }
+    .Features .feat p{
+        color: #888888;
+        line-height: 1.5;
+        
+    }
+    /*End Features*/
+    
+    /*Start About me */
+    .About-me{background-color: #F2F2F2;overflow: hidden;}
+    .About-me .Img{
+        float: left;
+        width: 40%;
+    }
+    .About-me .Img img{
+        
+        width: 100%;
+        height: 400px;
+        margin-top: 40px;
+    }
+    .About-me .info{
+        float:left;
+        width: 60%;
+        
+        
+    }
+    .About-me .info h3{
+        color: #777777;
+        margin: 40px 0 20px 40px;
+        font-size: x-large;
+        margin-top: 20px;
+    }
+    .About-me .info p{color:#888888;
+        margin: 00px 0 10px 40px;
+        line-height: 1.5;
+    }
+    .About-me .info p:last-of-type{
+        
+        margin: 30px 0 10px 40px;
+    }
+    .About-me .info .hobbies {
+        
+        width: 100%;
+        
+        
+        overflow: hidden;
+        
+    }
+    .About-me .info .hobbies div{
+        width: 50%;
+        padding-left: 0%;
+        float: left;
+        
+    }
+    .About-me .info .hobbies div section{
+        margin-left: 30px;
+        margin-top: 20px;
+    }
+    .About-me .info .hobbies div section i{
+        display: inline;
+        margin: 10px;
+        color: #2DCC70;
+        font-size:x-large;
+    }
+    .About-me .info .hobbies div section h3{
+        margin: 0;
+        display: inline;
+        font-size: x-large;
+    }
+    
+    /*End About me */
+    
+    /*start My-skills*/
+    
+    .my-skills{
+        
+        padding-top: 30px;
+        padding-bottom: 50px;
+        overflow: hidden;
+    }
+    .my-skills .skills, .my-skills .progress{
+        width: 50%;
+        float: left;
+    }
+    .my-skills .skills h3{
+        color: #777777;
+        margin: 40px 0 20px 40px;
+        font-size: x-large;
+        margin-top: 20px;
+        font-weight: bold;
+    }
+    .my-skills .skills p{
+        margin: 00px 0 10px 40px;
+        line-height: 1.5;
+    }
+    .my-skills .skills button{
+        background:none;
+        color:#2DCC70;
+        padding: 7px 18px  ;
+        cursor: pointer;
+        margin-left: 40px;
+        border: 1px solid #2DCC70;
+    }
+    .my-skills .skills button:hover{
+        background:#2DCC70;
+        color:#fff;
+        border: 1px solid #fff;
+    }
+    
+    .my-skills .progress .technology {
+        margin-left: 50px;
+    }
+    .my-skills .progress .technology h3{
+        color: #555;
+    }
+    .my-skills .progress .technology div{
+        
+        background-color: #F2F2F2;
+        width: 70%;
+        height: 15px;
+        
+    }
+    .my-skills .progress .technology div span{
+        background-color: #2DCC70;
+        width: 90%;
+        height: 15px; 
+        text-align: end;
+        font-size: small;
+        color: #fff;
+        font-weight: bold;
+        display: block;
+    }
+    
+    
+    /*End My-skills*/
+    
+    /*start Resume*/
+    .re{  
+        
+        background-color: #F2F2F2; 
+        padding-top: 30px;
+        padding-bottom: 30px;
+        text-align: center;
+    }
+    .re h3{
+        font-size: x-large;
+        color: #777777;
+        
+    }
+    .re p{
+        color:#888888;
+        line-height: 1.3;
+    }
+    .re button{
+        background:#fff;
+        color:#2DCC70;
+        padding: 7px 18px  ;
+        border: 1px solid #2DCC70;
+        cursor: pointer;
+        
+    }
+    .re button:hover{
+        
+        background:#2DCC70;
+        color:#fff;
+        border: 1px solid #fff;
+    }
+    
+    /*End Resume*/
+    
+    
+    /*start My Education*/
+    
+    .my-Education{
+        
+        padding-top: 30px;
+        padding-bottom: 30px;
+        overflow: hidden;
+    }
+    .my-Education .main{
+        width: 50%;
+        margin-right: 5%;
+        float: left;
+    }
+    
+    .my-Education .main h3{
+        color: #777777;
+        margin: 40px 0 20px 40px;
+        font-size: x-large;
+        margin-top: 20px;
+        font-weight: bold;
+    }
+    .my-Education .main p{
+        margin: 00px 0 10px 40px;
+        line-height: 1.5;
+        color:#888888
+    }
+    
+    .my-Education .exp{
+        width: 45%;
+        float: left;
+        margin-top: 30px;
+        
+    }
+    .my-Education .exp h3{
+        
+        color: #777777;
+        font-size: x-large;
+        margin-top: 30px;
+        margin-bottom: 0px;
+        font-weight: bold;
+    }
+    .my-Education .exp p{
+        margin-top: 5px;
+        color:#888888;
+        margin-bottom: 9px;
+    }
+    .my-Education .exp span{
+        background-color: #2CCA6F;
+        color:#fff;
+        padding: 5px;
+        display: inline-block;
+        margin-bottom: 4px;
+        
+    }
+    .my-Education hr{
+        background-color: #888888;
+        height: 1px;
+        border: 0;
+        
+    }
+
+    
+    /*End My-Education*/
+    
+    /*start testi*/
+    .testi{  
+        
+        background-color: #F2F2F2; 
+        padding-top: 30px;
+        padding-bottom: 30px;
+        text-align: center;
+    }
+    .testi p{
+        line-height: 1.3;
+        color: #666666;
+       font-style: italic ;
+    }
+    .testi h3{
+        color:#6A6E71;
+        font-weight: bold;
+      font-size: 21px;
+        
+    }
+ 
+    .testi .sq span{
+
+        width: 10px;
+        height: 3px;
+        border: 1px solid #2DCC70;
+        border-radius: 90px;
+        padding: 6px 6px;
+        margin-left: 3px;
+        display: inline-block;
+    }
+    .testi .sq .ac{        background-color:#2DCC70 ;
+    }
+    .testi .sq span:hover{
+
+        background-color:#2DCC70 ;
+    }
+
+
+    
+    /*End testi*/
+    
+    /*start Portfolio */
+    .portfolio{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        text-align: center;
+        
+    }
+    .portfolio h3{
+
+        color:#777777;
+        font-size: 25px;
+    }
+    .portfolio p{
+
+        color: #888888;
+        line-height: 1.3;
+        margin-bottom: 30px;
+    }
+    .portfolio .ourwork{
+        overflow: hidden;
+    }
+    
+    .portfolio .ourwork>div{
+        float: left;
+        
+        width:33.333% ;
+    }
+    .portfolio .ourwork>div img{
+        
+        width: 95%;
+        margin: 4%;
+        background-color: #fff;
+        padding: 2px;
+        border: 1px solid #888888;
+        box-shadow: 2px 2px 5px 2px gray;
+    }
+    .portfolio .ourwork>div:hover{
+
+       
+        transition:.1s linear ;
+
+    transform: rotate(6deg) ;
+
+   display: flex;
+
+      
+       
+    }
+    /*end portfolio*/
+    
+    /* Start Contact Me */
+    
+    .Contact{
+        
+        background-color: #252F31;
+        overflow: hidden;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .contact .info h3{
+        color:#fff;
+        margin-left: 30px;
+    
+    }
+    .Contact .info p{
+        color: #6A6E71;
+        margin-left: 30px;
+    }.contact address{
+
+        color: #6A6E71;
+        margin-left: 30px;
+    }
+
+    .contact .info {
+        float: left;
+        width: 50%;
+    }
+    .Contact .info p span{
+        color: #D1D6DA;
+    }
+    .contact .Form{
+        float: left;
+        width: 42%;
+        margin-left: 8%;
+        margin-top: 30px;
+    }
+
+    .Contact .Form label{
+        display: block;
+        color: #D1D6DA;
+        margin-bottom: 9px;
+    }
+    .Contact .Form input[type="text"]{
+
+        background-color: #4B5557;
+        width: 86%;
+        padding: 7px;
+        color:#fff;
+        border: none;
+        margin-bottom: 16px;
+        
+    }
+    .Contact .Form textarea{
+
+        background-color: #4B5557;
+        width: 86%;
+        padding: 7px;
+        color:#fff;
+        border: none;
+        height: 200px;
+    }
+    .Contact .Form input[type="submit"]{
+        margin-top: 5px;
+        background-color: #191E22;
+        color: #fff;
+        padding: 10px;
+        border: none;
+
+    }
+    /* Start Contact Me */
+    
+    /* Start Footer  */
+    footer{
+        background-color: #191E22;
+        text-align: center;
+        color: #6A6E71;
+        padding: 10px 0;
+        
+    }
+    footer div{
+        
+    }
+    
+    
+    /* End Footer  */
